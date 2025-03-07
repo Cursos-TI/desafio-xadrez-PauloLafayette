@@ -6,16 +6,19 @@
 
 int main() {
     
-    int bispo = 1, rainha = 1, torre = 1, escolha;
+    int bispo = 1, bispo2 = 1, rainha = 1, torre = 1,cavalo =1,cavalo2 = 0, escolha;
     
-    printf("Qual peça deseja movimentar ? \n1-Bispo\n2-Rainha\n3-Torre\n Escolha: "); //menu para escolha de peça
+    printf("Qual peça deseja movimentar ? \n1-Bispo\n2-Rainha\n3-Torre\n4-Cavalo\n Escolha: "); //menu para escolha de peça
     scanf("%d", &escolha);
         
     switch(escolha){ //definir a ação com base na escolha
         case 1: 
         
             while(bispo<= 5){//movimentação da peça
-                printf("Direita Cima\n");
+                for(bispo2;bispo2<=bispo;bispo2++){
+                    printf("Direita\n");
+                }
+                printf("Cima\n");
             bispo++;
             }
         
@@ -37,6 +40,16 @@ int main() {
         
         break;
     
+        case 4:
+
+        for(cavalo;cavalo<=1;cavalo++){//movimentação da peça utilizando estruturas aninhadas
+            while(cavalo2<=cavalo){
+                printf("Baixo\n");
+                cavalo2++;
+            }
+            printf("Esquerda\n");
+        }
+
         default://caso a opção seja inválida
         printf("Opção inválida");
         
