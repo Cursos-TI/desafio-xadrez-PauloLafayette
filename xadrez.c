@@ -13,8 +13,8 @@ int main() {
         
     switch(escolha){ //definir a ação com base na escolha
         case 1: 
-        
-            while(bispo<= 5){//movimentação da peça
+           
+        while(bispo<= 5){//movimentação da peça
                 for(bispo2;bispo2<=bispo;bispo2++){
                     printf("Direita\n");
                 }
@@ -22,9 +22,11 @@ int main() {
             bispo++;
             }
         
-        break;
+            break;
+        
         
         case 2:
+        
         do{
             printf("Esquerda\n");//movimentação da peça
             rainha++;
@@ -41,7 +43,7 @@ int main() {
         break;
     
         case 4:
-
+        
         for(cavalo;cavalo<=1;cavalo++){//movimentação da peça utilizando estruturas aninhadas
             while(cavalo2<=cavalo){
                 printf("Baixo\n");
@@ -49,6 +51,7 @@ int main() {
             }
             printf("Esquerda\n");
         }
+        break;
 
         default://caso a opção seja inválida
         printf("Opção inválida");
